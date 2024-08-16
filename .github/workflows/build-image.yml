@@ -14,7 +14,7 @@ jobs:
   # This workflow contains a single job called "build"
   build-and-publish-docker-image:
     name: Build Busybox APP
-    runs-on: docker/build-push-action@v6
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Build an image
